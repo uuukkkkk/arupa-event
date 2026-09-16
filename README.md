@@ -3,31 +3,29 @@
 2026年11月8日（日）10:00–16:00  
 おおたかの森S.C. 本館1F イーストプラザ
 
-茨城の6自治体が集まる、ふるさと納税マルシェのランディングページです。
+公開URL: https://uuukkkkk.github.io/arupa-event/
 
-## 公開URL（GitHub Pages）
+## GitHub Pages の有効化（初回のみ）
 
-https://uuukkkkk.github.io/arupa-event/
+1. このページを開く  
+   https://github.com/uuukkkkk/arupa-event/settings/pages
+2. **Build and deployment → Source** を **GitHub Actions** にする
+3. Save する
 
-リポジトリの Settings → Pages で Source を **GitHub Actions** にすると公開されます。
+保存後、Actions の Deploy GitHub Pages が成功すると上の URL で見られます。
 
-カスタムサブドメイン（例: `marche.arupa.or.jp`）を使う場合は、DNS に次の CNAME を追加してください。
+## カスタムサブドメイン
 
-```
-marche.arupa.or.jp  CNAME  uuukkkkk.github.io
-```
+独自ドメイン（例: `marche.arupa.or.jp`）にする場合:
 
-その後、Settings → Pages → Custom domain に同じホスト名を入れてください。
+1. ドメイン側 DNS に CNAME を追加する  
+   `marche.arupa.or.jp` → `uuukkkkk.github.io`
+2. 同じ Settings → Pages の Custom domain にホスト名を入れる
 
 ## ファイル構成
 
-```
-.
-├ index.html
-├ assets/
-├ images/
-├ favicon.svg
-└ og.jpg
-```
+- `index.html` … トップページ
+- `assets/` … CSS / JS
+- `images/` … 写真・ロゴ
 
 主催：ARUPA（一般社団法人地域資源活用推進協会）
