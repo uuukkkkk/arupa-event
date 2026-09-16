@@ -5,30 +5,29 @@
 
 茨城の6自治体が集まる、ふるさと納税マルシェのランディングページです。
 
+## 公開URL（GitHub Pages）
+
+https://uuukkkkk.github.io/arupa-event/
+
+リポジトリの Settings → Pages で Source を **GitHub Actions** にすると公開されます。
+
+カスタムサブドメイン（例: `marche.arupa.or.jp`）を使う場合は、DNS に次の CNAME を追加してください。
+
+```
+marche.arupa.or.jp  CNAME  uuukkkkk.github.io
+```
+
+その後、Settings → Pages → Custom domain に同じホスト名を入れてください。
+
 ## ファイル構成
 
 ```
 .
-├ index.html      … トップページ
-├ assets/         … CSS / JS
-├ images/         … 写真・ロゴ
+├ index.html
+├ assets/
+├ images/
 ├ favicon.svg
-├ og.jpg
-└ 写真クレジット.txt
+└ og.jpg
 ```
-
-`index.html` と `assets/`・`images/` は同じフォルダのまま公開してください。  
-`index.html` だけを置くと表示できません。
-
-## 公開のしかた
-
-このリポジトリの中身を、Webサーバーの公開フォルダにそのままアップロードします。
-
-GitHub Pages を使う場合は、Settings → Pages で Source を `main` / root にしてください。
-
-## 写真クレジット
-
-観光いばらきフォトライブラリー、取手市観光協会、牛久市  
-返礼品画像：ふるさとチョイス
 
 主催：ARUPA（一般社団法人地域資源活用推進協会）
