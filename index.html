@@ -59,12 +59,6 @@
   .logo-in { aspect-ratio: 3 / 1; }
 }
 
-    @font-face{font-family:"Zen Maru Gothic";font-style:normal;font-weight:900;font-display:swap;src:url("./assets/fonts/zen-maru-gothic-900.woff2") format("woff2")}
-    @font-face{font-family:"Noto Sans JP";font-style:normal;font-weight:400;font-display:swap;src:url("./assets/fonts/noto-sans-jp-400.woff2") format("woff2")}
-    @font-face{font-family:"Noto Sans JP";font-style:normal;font-weight:500;font-display:swap;src:url("./assets/fonts/noto-sans-jp-500.woff2") format("woff2")}
-    @font-face{font-family:"Noto Sans JP";font-style:normal;font-weight:700;font-display:swap;src:url("./assets/fonts/noto-sans-jp-700.woff2") format("woff2")}
-    @font-face{font-family:"Nunito";font-style:normal;font-weight:800;font-display:swap;src:url("./assets/fonts/nunito-800.woff2") format("woff2")}
-    @font-face{font-family:"Nunito";font-style:normal;font-weight:900;font-display:swap;src:url("./assets/fonts/nunito-900.woff2") format("woff2")}
     @font-face{font-family:"Display Fallback";src:local("Hiragino Maru Gothic ProN"),local("Hiragino Sans"),local("Noto Sans CJK JP"),local("Yu Gothic");size-adjust:100%;ascent-override:88%;descent-override:12%;line-gap-override:0%}
     @font-face{font-family:"Body Fallback";src:local("Hiragino Kaku Gothic ProN"),local("Hiragino Sans"),local("Noto Sans CJK JP"),local("Yu Gothic");size-adjust:100%;ascent-override:88%;descent-override:12%;line-gap-override:0%}
     @font-face{font-family:"Num Fallback";src:local("Arial"),local("Liberation Sans"),local("Nimbus Sans"),local("Helvetica");size-adjust:128.23%;ascent-override:78.84%;descent-override:27.53%;line-gap-override:0%}
@@ -82,8 +76,8 @@
     <meta name="theme-color" content="#DDF0FA">
     <meta name="format-detection" content="telephone=no">
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="icon" type="image/png" href="./images/logo.png">
-    <link rel="apple-touch-icon" href="./images/logo.png">
+    <link rel="icon" type="image/png" href="./images/favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="いばらき ふるさと マルシェ">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
   </head>
@@ -2176,6 +2170,10 @@
     <script src="./assets/site.js"></script>
     <script>
       window.addEventListener("load", function () {
+        var fonts = document.createElement("link");
+        fonts.rel = "stylesheet";
+        fonts.href = "./assets/fonts/fonts.css";
+        document.head.appendChild(fonts);
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         window.gtag = gtag;
