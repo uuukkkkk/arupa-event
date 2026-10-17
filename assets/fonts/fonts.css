@@ -2,42 +2,42 @@
   font-family: "Zen Maru Gothic";
   font-style: normal;
   font-weight: 900;
-  font-display: optional;
+  font-display: swap;
   src: url("./zen-maru-gothic-900.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   src: url("./noto-sans-jp-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 500;
-  font-display: optional;
+  font-display: swap;
   src: url("./noto-sans-jp-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Sans JP";
   font-style: normal;
   font-weight: 700;
-  font-display: optional;
+  font-display: swap;
   src: url("./noto-sans-jp-700.woff2") format("woff2");
 }
 @font-face {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
-  font-display: optional;
+  font-display: swap;
   src: url("./nunito-800.woff2") format("woff2");
 }
 @font-face {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 900;
-  font-display: optional;
+  font-display: swap;
   src: url("./nunito-900.woff2") format("woff2");
 }
 
@@ -58,11 +58,11 @@
   descent-override: 12%;
   line-gap-override: 0%;
 }
-/* Width tuned so the date matches Nunito and 日曜日 stays beside it. */
+/* Nunito 900 against Arial (xAvg 566/1000 vs 904/2048). */
 @font-face {
   font-family: "Num Fallback";
   src: local("Arial"), local("Liberation Sans"), local("Nimbus Sans"), local("Helvetica");
-  size-adjust: 108%;
+  size-adjust: 128.23%;
   ascent-override: 78.84%;
   descent-override: 27.53%;
   line-gap-override: 0%;
