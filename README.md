@@ -7,6 +7,24 @@
 
 予備URL: https://uuukkkkk.github.io/arupa-event/
 
+## 手元で編集する
+
+公開中のページが編集の本体です。`main` に push すると GitHub Pages にそのまま載ります。
+
+- 文言・構成・OGP … `index.html`（写真確認は `photos/index.html`）
+- 見た目 … `assets/site.css`
+- カウントダウンとスタンプラリー … `assets/site.js`
+- 画像 … `images/`
+- 検索 … `index.html` の JSON-LD、`robots.txt`、`sitemap.xml`
+
+プレビュー:
+
+```
+python3 -m http.server 4173
+```
+
+ブラウザで http://127.0.0.1:4173/ を開きます。
+
 ## 公開手順（初回のみ）
 
 GitHub App の権限では Pages のオン/オフと DNS 変更ができないため、次の2つだけ手動です。

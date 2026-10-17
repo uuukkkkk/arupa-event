@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://event.arupa.or.jp/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <image:image>
+      <image:loc>https://event.arupa.or.jp/images/event.jpg</image:loc>
+      <image:title>いばらき ふるさと マルシェ 2026年11月8日</image:title>
+      <image:caption>2026年11月8日（日）10:00–16:00、おおたかの森S.C. 本館1F イーストプラザ。入場無料・申込不要。</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://event.arupa.or.jp/images/ogp.jpg</image:loc>
+      <image:title>いばらき ふるさと マルシェ</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://event.arupa.or.jp/images/logo.png</image:loc>
+      <image:title>いばらき ふるさと マルシェ</image:title>
+    </image:image>
+  </url>
+</urlset>

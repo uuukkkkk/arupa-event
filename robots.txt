@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://event.arupa.or.jp/sitemap.xml
+
