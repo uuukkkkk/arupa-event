@@ -79,6 +79,45 @@
     nodes.forEach(function (el) { observer.observe(el); });
   }
 
+  var PAGE_URL = "https://event.arupa.or.jp/";
+
+  function copyPageLink(button) {
+    var label = button.querySelector("[data-copy-label]");
+    function done() {
+      if (!label) return;
+      if (!label.getAttribute("data-copy-default")) {
+        label.setAttribute("data-copy-default", label.textContent.replace(/\s+/g, " ").trim());
+      }
+      label.textContent = "コピーしました";
+      window.clearTimeout(button._timer);
+      button._timer = window.setTimeout(function () {
+        label.textContent = label.getAttribute("data-copy-default");
+      }, 1600);
+    }
+    function fallback() {
+      var field = document.createElement("textarea");
+      field.value = PAGE_URL;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.left = "-9999px";
+      document.body.appendChild(field);
+      field.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (error) {
+        ok = false;
+      }
+      document.body.removeChild(field);
+      if (ok) done();
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(PAGE_URL).then(done).catch(fallback);
+      return;
+    }
+    fallback();
+  }
+
   function watchHeader() {
     var header = document.querySelector("[data-header]");
     if (!header) return;
@@ -102,6 +141,11 @@
         saveVisited(visited);
         renderStamps(visited);
       }
+      return;
+    }
+    var copy = event.target.closest("[data-copy-link]");
+    if (copy) {
+      copyPageLink(copy);
       return;
     }
     var taste = event.target.closest("[data-taste]");
