@@ -10,3 +10,20 @@
   .prog-row>:nth-child(4){grid-column:2 / span 2}
   .prog-row>:nth-child(5){grid-column:4 / span 2}
 }
+
+/* White text needs a darker fill. The tent stripe keeps the bright orange. */
+:root {
+  --color-green: #1b642c;
+  --color-orange-d: #8f3410;
+  --color-blue-d: #1a5f86;
+  --color-yellow-d: #7c5406;
+}
+.bg-orange { background-color: #c2410c; }
+.border-orange.bg-orange { border-color: #c2410c; }
+.btn-marche.primary { background: #c2410c; border-color: #c2410c; }
+.btn-marche.primary:hover { background: #8f3410; border-color: #8f3410; }
+.text-orange { color: #b33d0e; }
+.logo-in { aspect-ratio: 3 / 2; }
+@media (min-width: 760px) {
+  .logo-in { aspect-ratio: 3 / 1; }
+}

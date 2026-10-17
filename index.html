@@ -24,9 +24,10 @@
     <meta name="twitter:image:alt" content="いばらき ふるさと マルシェ。2026年11月8日（日）10:00–16:00、おおたかの森S.C. 本館1F イーストプラザ。入場無料・申込不要。">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/site.css" data-precedence="default">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@900&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Nunito:wght@800;900&amp;display=swap" data-precedence="default">
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MZVGGYWF2N"></script>
+    <link rel="preload" href="./assets/fonts/zen-maru-gothic-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/nunito-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="./assets/site.css">
+    <link rel="stylesheet" href="./assets/fonts/fonts.css">
     <title>いばらき ふるさと マルシェ｜2026.11.8（日）おおたかの森S.C.</title>
     <meta name="description" content="2026年11月8日（日）10:00–16:00、流山市おおたかの森S.C.本館1Fイーストプラザ。茨城の8つのまちによる特産品紹介・試食・ふるさと納税・ご当地輪投げ・抽選会。入場無料・予約不要、雨天でも開催。">
     <link rel="canonical" href="https://event.arupa.or.jp/">
@@ -36,9 +37,6 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <link rel="icon" type="image/png" href="./images/logo.png">
     <link rel="apple-touch-icon" href="./images/logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-MZVGGYWF2N');</script>
     <meta name="apple-mobile-web-app-title" content="いばらき ふるさと マルシェ">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
   </head>
@@ -271,7 +269,7 @@
       "sameAs": "https://www.furusato-tax.jp/feature/detail/08443/28019?utm_source=city_portal&utm_medium=referral&utm_campaign=lgmk_08443",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/ami.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/ami.webp",
         "width": 520,
         "height": 323,
         "caption": "阿見町のコシヒカリ"
@@ -287,7 +285,7 @@
       "sameAs": "https://www.furusato-tax.jp/city/product/08219?utm_source=ibarakiken_ushikushi&utm_medium=referral&utm_campaign=lgmk_08219",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/ushiku.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/ushiku.webp",
         "width": 520,
         "height": 323,
         "caption": "牛久市の常陸牛"
@@ -303,7 +301,7 @@
       "sameAs": "https://www.furusato-tax.jp/city/product/08215?utm_source=ibarakiken_kitaibarakishi&utm_medium=referral&utm_campaign=lgmk_08215",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/kitaibaraki.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/kitaibaraki.webp",
         "width": 520,
         "height": 323,
         "caption": "北茨城市のあんこう鍋"
@@ -319,7 +317,7 @@
       "sameAs": "https://www.furusato-tax.jp/product/detail/08231/6295812/0?utm_source=city_portal&utm_medium=referral&utm_campaign=lgmk_08231",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/sakuragawa.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/sakuragawa.webp",
         "width": 520,
         "height": 323,
         "caption": "桜川市産こしひかり"
@@ -335,7 +333,7 @@
       "sameAs": "https://www.furusato-tax.jp/product/detail/08364/7198618",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/daigo.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/daigo.webp",
         "width": 520,
         "height": 323,
         "caption": "大子町産の米、にじのきらめき"
@@ -351,9 +349,9 @@
       "sameAs": "https://item.rakuten.co.jp/f082350-tsukubamirai/cl14-nt/",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/tsukubamirai.jpg",
-        "width": 1080,
-        "height": 1080,
+        "url": "https://event.arupa.or.jp/images/towns/tsukubamirai.webp",
+        "width": 800,
+        "height": 800,
         "caption": "つくばみらい市産こしひかり"
       }
     },
@@ -367,7 +365,7 @@
       "sameAs": "https://www.rakuten.co.jp/f082171-toride/",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/toride.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/toride.webp",
         "width": 760,
         "height": 760,
         "caption": "取手市産コシヒカリ"
@@ -383,7 +381,7 @@
       "sameAs": "https://www.namegata-furusato.jp/",
       "image": {
         "@type": "ImageObject",
-        "url": "https://event.arupa.or.jp/images/towns/namegata.jpg",
+        "url": "https://event.arupa.or.jp/images/towns/namegata.webp",
         "width": 760,
         "height": 506,
         "caption": "行方市のミルキークイーン"
@@ -457,7 +455,7 @@
               <source srcset="./images/logo-wide.webp" type="image/webp" media="(min-width: 760px)">
               <source srcset="./images/logo-wide.png" type="image/png" media="(min-width: 760px)">
               <source srcset="./images/logo.webp" type="image/webp">
-              <img class="logo-in block h-auto w-[min(100%,560px)] max-h-[min(300px,33vh)] object-contain min-[760px]:mx-auto min-[760px]:w-[min(100%,720px)] min-[760px]:max-h-none" src="./images/logo.png" alt="いばらき ふるさと マルシェ" width="1152" height="768" fetchpriority="high" decoding="sync">
+              <img class="logo-in block h-auto w-[min(100%,560px)] max-h-[min(300px,33vh)] object-contain min-[760px]:mx-auto min-[760px]:w-[min(100%,720px)] min-[760px]:max-h-none" src="./images/logo.png" alt="いばらき ふるさと マルシェ" width="1152" height="768" fetchpriority="high" decoding="async">
             </picture>
           </h1>
           <div class="grid items-start gap-[18px] [grid-template-areas:'a'_'c'_'b'] min-[760px]:grid-cols-[1.08fr_.92fr] min-[760px]:gap-[clamp(18px,3vw,40px)] min-[760px]:[grid-template-areas:'a_c'_'b_c']">
@@ -911,7 +909,7 @@
             <div class="reveal" style="transition-delay:0ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.furusato-tax.jp/feature/detail/08443/28019?utm_source=city_portal&amp;utm_medium=referral&amp;utm_campaign=lgmk_08443" target="_blank" rel="noopener noreferrer" aria-label="阿見町のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/ami.jpg" alt="阿見町のコシヒカリ" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/ami.webp" alt="阿見町のコシヒカリ" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -920,7 +918,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       AMI
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -996,7 +994,7 @@
             <div class="reveal" style="transition-delay:70ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.furusato-tax.jp/city/product/08219?utm_source=ibarakiken_ushikushi&amp;utm_medium=referral&amp;utm_campaign=lgmk_08219" target="_blank" rel="noopener noreferrer" aria-label="牛久市のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/ushiku.jpg" alt="牛久市の常陸牛" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/ushiku.webp" alt="牛久市の常陸牛" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1005,7 +1003,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       USHIKU
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -1081,7 +1079,7 @@
             <div class="reveal" style="transition-delay:140ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.furusato-tax.jp/city/product/08215?utm_source=ibarakiken_kitaibarakishi&amp;utm_medium=referral&amp;utm_campaign=lgmk_08215" target="_blank" rel="noopener noreferrer" aria-label="北茨城市のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/kitaibaraki.jpg" alt="北茨城市のあんこう鍋" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/kitaibaraki.webp" alt="北茨城市のあんこう鍋" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1090,7 +1088,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       KITAIBARAKI
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -1166,7 +1164,7 @@
             <div class="reveal" style="transition-delay:210ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.furusato-tax.jp/product/detail/08231/6295812/0?utm_source=city_portal&amp;utm_medium=referral&amp;utm_campaign=lgmk_08231" target="_blank" rel="noopener noreferrer" aria-label="桜川市のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/sakuragawa.jpg" alt="桜川市産こしひかり" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/sakuragawa.webp" alt="桜川市産こしひかり" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1175,7 +1173,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       SAKURAGAWA
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -1251,7 +1249,7 @@
             <div class="reveal" style="transition-delay:280ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.furusato-tax.jp/product/detail/08364/7198618" target="_blank" rel="noopener noreferrer" aria-label="大子町のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/daigo.jpg" alt="大子町産の米、にじのきらめき" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/daigo.webp" alt="大子町産の米、にじのきらめき" width="520" height="323" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1260,7 +1258,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       DAIGO
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -1336,7 +1334,7 @@
             <div class="reveal" style="transition-delay:350ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://item.rakuten.co.jp/f082350-tsukubamirai/cl14-nt/" target="_blank" rel="noopener noreferrer" aria-label="つくばみらい市のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/tsukubamirai.jpg" alt="つくばみらい市産こしひかり" width="1080" height="1080" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/tsukubamirai.webp" alt="つくばみらい市産こしひかり" width="800" height="800" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1345,7 +1343,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       TSUKUBAMIRAI
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -1421,7 +1419,7 @@
             <div class="reveal" style="transition-delay:420ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.rakuten.co.jp/f082171-toride/" target="_blank" rel="noopener noreferrer" aria-label="取手市のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/toride.jpg" alt="取手市産コシヒカリ" width="760" height="760" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/toride.webp" alt="取手市産コシヒカリ" width="760" height="760" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1430,7 +1428,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       TORIDE
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -1506,7 +1504,7 @@
             <div class="reveal" style="transition-delay:490ms">
               <article class="relative grid grid-rows-[auto_1fr_auto] rounded-3xl bg-paper shadow-[0_14px_30px_-18px_rgb(74_46_20_/_0.3)] transition-[box-shadow,transform] duration-200" style="transform-style:preserve-3d">
                 <a href="https://www.namegata-furusato.jp/" target="_blank" rel="noopener noreferrer" aria-label="行方市のふるさと納税" class="town-photo relative block aspect-video overflow-hidden rounded-t-3xl bg-paper no-underline">
-                  <img src="./images/towns/namegata.jpg" alt="行方市のミルキークイーン" width="760" height="506" class="absolute inset-0 size-full object-contain" decoding="async">
+                  <img src="./images/towns/namegata.webp" alt="行方市のミルキークイーン" width="760" height="506" class="absolute inset-0 size-full object-contain" decoding="async" loading="lazy">
                   <span class="pointer-events-none absolute right-3 top-4 z-[2] grid size-10 place-items-center rounded-full bg-paper/90 text-ink shadow-[var(--shadow-card)]" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-3.5" aria-hidden="true">
                       <path d="M15 3h6v6"></path>
@@ -1515,7 +1513,7 @@
                     </svg>
                   </span>
                   <div class="absolute left-2.5 top-4 z-[2] max-w-[min(64%,13rem)] -rotate-2 rounded-xl border-[3px] border-paper bg-orange px-3 py-1.5 text-left shadow-[0_8px_18px_-8px_rgb(74_46_20_/_0.5)] min-[760px]:left-3.5 min-[760px]:px-3.5">
-                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper/90">
+                    <small class="block font-num text-[8px] font-black tracking-[0.14em] leading-none text-paper">
                       NAMEGATA
                     </small>
                     <b class="block font-display text-[15px] font-black leading-[1.2] text-paper min-[400px]:text-[17px]">
@@ -2129,5 +2127,18 @@
     </div>
     <!--/$-->
     <script src="./assets/site.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag("js", new Date());
+        gtag("config", "G-MZVGGYWF2N");
+        var s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=G-MZVGGYWF2N";
+        document.head.appendChild(s);
+      });
+    </script>
   </body>
 </html>
