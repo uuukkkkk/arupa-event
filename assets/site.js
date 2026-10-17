@@ -4,13 +4,6 @@
   var STAMP_KEY = "ibaraki-marche-stamps";
   var TOWN_COUNT = 8;
 
-  function calendarDays() {
-    var now = new Date();
-    var target = Date.UTC(2026, 10, 8);
-    var today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
-    return Math.round((target - today) / 86400000);
-  }
-
   function remaining() {
     var ms = EVENT_START - Date.now();
     if (ms <= 0) return null;
@@ -28,14 +21,6 @@
   }
 
   function renderCountdown() {
-    var days = calendarDays();
-    document.querySelectorAll("[data-countdown-days]").forEach(function (el) {
-      el.textContent = days > 0 ? String(days) : days === 0 ? "0" : "0";
-    });
-    var badge = document.querySelector("[data-countdown-days]");
-    if (badge && badge.parentElement && days <= 0) {
-      badge.parentElement.textContent = days === 0 ? "本日開催！" : "開催しました";
-    }
     var clock = remaining();
     document.querySelectorAll("[data-cd]").forEach(function (el) {
       if (!clock) {
