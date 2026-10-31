@@ -2,7 +2,7 @@
 (function () {
   var EVENT_START = new Date("2026-11-08T10:00:00+09:00").getTime();
   var STAMP_KEY = "ibaraki-marche-stamps";
-  var TOWN_COUNT = 8;
+  var TOWN_COUNT = document.querySelectorAll("[data-town]").length;
 
   function remaining() {
     var ms = EVENT_START - Date.now();
@@ -35,7 +35,16 @@
     try {
       var raw = JSON.parse(localStorage.getItem(STAMP_KEY) || "null");
       var visited = raw && raw.state && raw.state.visited;
-      return Array.isArray(visited) ? visited.filter(function (name) { return typeof name === "string"; }) : [];
+      if (!Array.isArray(visited)) return [];
+      var known = {};
+      document.querySelectorAll("[data-town]").forEach(function (button) {
+        known[button.getAttribute("data-town")] = true;
+      });
+      var next = visited.filter(function (name) { return typeof name === "string" && known[name]; });
+      if (next.length !== visited.length) {
+        try { saveVisited(next); } catch (error) {}
+      }
+      return next;
     } catch (error) {
       return [];
     }
